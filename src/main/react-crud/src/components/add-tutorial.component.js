@@ -83,8 +83,13 @@ export default class AddTutorial extends Component {
           </div>
         ) : (
           <div>
+
             <div className="form-group">
-              <label htmlFor="title">Title</label>
+              <h3 style={{color: 'green', fontFamily:'cursive'}}>Enter Tutorial Details</h3>
+            </div>
+            < br/>< br/>
+            <div class="d-inline-flex align-items-center" style={{fontFamily:'Verdana'}}>
+              <label htmlFor="title">Title:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
               <input
                 type="text"
                 className="form-control"
@@ -94,10 +99,11 @@ export default class AddTutorial extends Component {
                 onChange={this.onChangeTitle}
                 name="title"
               />
+               <br />
             </div>
-
-            <div className="form-group">
-              <label htmlFor="description">Description</label>
+            < br/>< br/>
+            <div class="d-inline-flex align-items-center" style={{fontFamily:'Verdana'}}>
+              <label htmlFor="description">Description:</label>
               <input
                 type="text"
                 className="form-control"
@@ -108,9 +114,9 @@ export default class AddTutorial extends Component {
                 name="description"
               />
             </div>
-
-              <div className="form-group">
-                   <label htmlFor="published">Published</label>
+            < br/>< br/>
+            <div class="d-inline-flex align-items-center" style={{fontFamily:'Verdana'}}>
+                   <label htmlFor="published">Published:&nbsp;&nbsp;</label>
                     <input
                        type="text"
                        className="form-control"
@@ -121,7 +127,7 @@ export default class AddTutorial extends Component {
                        name="published"
               />
               </div>
-
+            < br/>< br/>
             <button onClick={this.saveTutorial} className="btn btn-success">
               Submit
             </button>

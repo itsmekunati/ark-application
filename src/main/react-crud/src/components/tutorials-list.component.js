@@ -102,7 +102,7 @@ export default class TutorialsList extends Component {
               placeholder="Search by title"
               value={searchTitle}
               onChange={this.onChangeSearchTitle}
-            />
+            /> &nbsp;&nbsp;&nbsp;
             <div className="input-group-append">
               <button
                 className="btn btn-outline-secondary"
@@ -115,7 +115,7 @@ export default class TutorialsList extends Component {
           </div>
         </div>
         <div className="col-md-6">
-          <h4>Tutorials List</h4>
+          <h3 style={{color: 'white', fontFamily:'cursive'}}>Tutorials List</h3>
 
           <ul className="list-group">
             {tutorials &&
@@ -173,7 +173,7 @@ export default class TutorialsList extends Component {
           ) : (
             <div>
               <br />
-              <p>Please click on a Tutorial...</p>
+              <p style={{color: 'red', fontFamily:'cursive'}}>Please click on a Tutorial...</p>
             </div>
           )}
         </div>

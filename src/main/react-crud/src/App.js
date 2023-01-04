@@ -11,19 +11,19 @@ class App extends Component {
   render() {
     return (
       <div>
-        <nav className="navbar navbar-expand navbar-dark bg-dark">
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
           <Link to={"/tutorials"} className="navbar-brand">
-            Ark Application
+            <span style={{color: 'green'}}>Ark Application</span>
           </Link>
           <div className="navbar-nav mr-auto">
             <li className="nav-item">
               <Link to={"/tutorials"} className="nav-link">
-                Tutorials
+              <span style={{color: 'orange'}}>Tutorials</span>
               </Link>
             </li>
             <li className="nav-item">
               <Link to={"/add"} className="nav-link">
-                Add
+              <span style={{color: 'orange'}}>Add</span>
               </Link>
             </li>
           </div>
