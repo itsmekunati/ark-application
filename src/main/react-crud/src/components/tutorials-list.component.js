@@ -115,7 +115,7 @@ export default class TutorialsList extends Component {
           </div>
         </div>
         <div className="col-md-6">
-          <h3 style={{color: 'white', fontFamily:'cursive'}}>Tutorials List</h3>
+          <h3 style={{color: 'green', fontFamily:'cursive'}}>Tutorials List</h3>
 
           <ul className="list-group">
             {tutorials &&
